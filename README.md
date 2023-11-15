@@ -1,3 +1,7 @@
+rtl - lern react testing librati
+
+
+jest - lern jest testing librari
 For testing install Jest
 ```npm i -D jest```
 
