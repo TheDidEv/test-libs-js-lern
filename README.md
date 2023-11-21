@@ -1,4 +1,4 @@
-rtl - lern react testing librati
+rtl - lern react testing librari
 
 
 jest - lern jest testing librari
