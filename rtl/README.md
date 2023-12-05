@@ -40,4 +40,7 @@ export default App;
 ```
 
 for start testin unput in console 
-```npm start test```
+```npm start test | npm run test```
+
+also we can choise test by name
+```npm run test --testNamePattern=TESTAPP renders learn react link2```
