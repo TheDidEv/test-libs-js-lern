@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState(null);
   const [toggle, setToggle] = useState(false);
+  const [value, setValue] = useState(false);
 
   const onClick = () => setToggle(prev => !prev);
 
@@ -14,11 +15,12 @@ function App() {
 
   return (
     <div>
-      {toggle === true && <div>toggle</div>}
+      <h1 data-testing="value-elem">{value}</h1>
+      {toggle === true && <div data-testid='toggle-elem'>toggle</div>} {/*data-testid for get element by id */}
       {data && <div style={{ color: 'red' }}>data</div>}
       <h1>Hello world</h1>
-      <button onClick={onClick}>bttn</button>
-      <input type="text" placeholder="input value" />
+      <button data-testid='toggle-btn' onClick={onClick}>bttn</button>{/*data-testid for get element by id */}
+      <input onChange={e => setValue(e.target.value)} type="text" placeholder="input value" />
     </div>
   );
 }

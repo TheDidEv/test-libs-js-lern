@@ -44,3 +44,6 @@ for start testin unput in console
 
 also we can choise test by name
 ```npm run test --testNamePattern=TESTAPP renders learn react link2```
+
+for testing by id, we need on our code create HTML teg with data-testingid='your-id'
+and then we can test on App.test.js - queryByTestId, getByTestId or another
